@@ -104,6 +104,21 @@ input, select, textarea {
 	appearance: none;
 }
 
+.letter{
+	width: 50%;
+	float:left;"
+}
+
+
+	@media screen and (max-width: 480px) {
+
+		.letter{
+	width: 100%;
+}
+
+	}
+
+
 /* Basic */
 
 	@-ms-viewport {
@@ -3912,4 +3927,5 @@ input, select, textarea {
 		}
 
 	}
+
 
