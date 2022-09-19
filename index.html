@@ -15,8 +15,10 @@
 </head>
 <body class="is-preload">
 
+	<img src="images/gallery/fulls/KakaoTalk_20220918_223315028_01.jpg" width=100%; onclick='netflix(this);'>
+
 	<!-- Wrapper -->
-	<div id="wrapper">
+	<div id="wrapper" style="display:none;">
 		<!-- Intro -->
 		<section class="intro">
 			<header>
@@ -30,7 +32,7 @@
 				</ul>
 			</header>
 			<div class="content">
-				<img src="images/gallery/fulls/KakaoTalk_20220916_092154406_01.webp" alt="" width=100%;/>
+				<img src="images/gallery/fulls/KakaoTalk_20220919_133254474.jpg" alt="" width=100%;/>
 			</div>
 		</section>
 
@@ -46,6 +48,8 @@
 				<img src="images/gallery/fulls/118645650_607289076613654_6039849763126213177_n.jpg" width=30%; alt="" />
 				<img src="images/gallery/fulls/118647576_317677546319531_7639206292705401358_n.jpg" width=30%; alt="" />
 				<p>생후 98일 뽀시래기 시절부터 생후 4019일이 되기까지</p>
+				
+
 			</div>
 		</section>
 
@@ -398,9 +402,27 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 				<section>
 					<header>
 						<h2>Get in touch</h2>
+											<footer>
+						<ul class="items">
+							<li>
+								<h3>instagram</h3>
+								<a href="#">@zh1oveszm</a>
+							</li>
+							<li>
+								<h3>Phone</h3>
+								<a href="#">You got the wrong number</a>
+							</li>
+							<li>
+								<h3>Address</h3>
+								<span>Seo-gu, Daejeon, Republic of Korea</span>
+							</li>
+						</ul>
+					</footer>
+					
 					</header>
 					<div class="content">
 						<p><strong>축하 메세지</strong> 보낸다고 실제로 오진 않음</p>
+
 						<form>
 							<div class="fields">
 								<div class="field half">
@@ -417,24 +439,12 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 								<li><input type="submit" value="Send Message" class="button primary" /></li>
 							</ul>
 						</form>
+						<img src="images/gallery/fulls/KakaoTalk_20220918_223311320.gif" alt="" width=50%;/>
 					</div>
-					<footer>
-						<ul class="items">
-							<li>
-								<h3>instagram</h3>
-								<a href="#">@zh1oveszm</a>
-							</li>
-							<li>
-								<h3>Phone</h3>
-								<a href="#">You got the wrong number</a>
-							</li>
-							<li>
-								<h3>Address</h3>
-								<span>Seo-gu, Daejeon, Republic of Korea</span>
-							</li>
-						</ul>
-					</footer>
+
+
 				</section>
+
 
 				<!-- Copyright -->
 				<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
@@ -449,5 +459,19 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				function netflix(obj){
+
+					if($(obj).attr('src') == "images/gallery/fulls/KakaoTalk_20220918_223315028.jpg"){
+						$(obj).css('display', 'none');
+						$("#wrapper").css('display', 'inline-block');
+						return;
+					}
+
+					$(obj).attr('src',  "images/gallery/fulls/KakaoTalk_20220918_223315028.jpg");
+
+				}
+
+			</script>
 		</body>
 		</html>
