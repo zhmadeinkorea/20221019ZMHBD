@@ -118,8 +118,12 @@ input, select, textarea {
 }
 
 .letter{
-	flex: 1 1 50%;
-	height: 400px;
+	flex: 50%;
+	height: auto;
+	min-height: 400px;
+	  background-repeat : no-repeat;
+       background-size : cover;
+	background-position: center center;
 }
 
 .letter:nth-child(2){
@@ -130,6 +134,9 @@ padding-left: 5px;
 padding-right: 5px;
 }
 
+.letterChild{
+	display: flex;
+}
 
 	@media screen and (max-width: 480px) {
 
@@ -141,8 +148,15 @@ padding-right: 5px;
 
 		.letter{
 		flex: 100%;
+		min-height: 400px;
 		height: auto;
+
+			 background-repeat : no-repeat;
+	       background-size : cover;
+		background-position: center center;
+
 		}
+
 		.letter:nth-child(3){
 			
 			order: 2;
@@ -151,6 +165,10 @@ padding-right: 5px;
 		.letter:nth-child(4){
 			order: 1;
 		}
+
+
+		}
+		
 	}
 
 
