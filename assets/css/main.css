@@ -124,6 +124,8 @@ input, select, textarea {
 	  background-repeat : no-repeat;
        background-size : cover;
 	background-position: center center;
+
+	vertical-align:middle;
 }
 
 .letter:nth-child(2){
@@ -136,6 +138,7 @@ padding-right: 5px;
 
 .letterChild{
 	display: flex;
+	padding:0.5em;
 }
 
 	@media screen and (max-width: 480px) {
